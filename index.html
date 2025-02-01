@@ -1,123 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Body.css">
     <title>Edukin</title>
-    <meta name="ViewPort" content="width=device-width, initial-scale=1.0">
-    <style>
-        ul {
-            list-style: none;
-        }
-
-        li {
-            margin: 10px;
-        }
-
-        button {
-            margin: 10px
-        }
-    </style>
-    <link rel="icon" type="image/x-icon" href="cat.jpg">
 </head>
 <body>
-<nav style="display: flex; justify-content: space-between; justify-items: center">
-    <img src="cat.jpg" width="100" height="80" alt="CAT">
-    <ul style="display: flex;">
-        <li><a href="" target="_blank">Lorem Ipsssssssum</a></li>
-        <li><a href="" target="_blank">Lorem Ipssssssssum</a></li>
-        <li><a href="" target="_blank">Lorem Ipsum</a></li>
-        <li><a href="" target="_blank">Lorem Ipsum</a></li>
-        <li><a href="" target="_blank">Lorem Ipsum</a></li>
+<nav>
+    <h2 id="Logo">Edukin</h2>
+    <ul>
+        <li><a href="#" class="StackShower">Courses</a></li>
+        <li><a href="#" class="StackShower">Bootcamps</a></li>
+        <li><a href="#" class="">Community</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Pricing</a></li>
     </ul>
     <div>
-        <button onclick="alert('Signed in')">Sign In</button>
-        <button onclick="alert('Signed up')">Sign Up</button>
+        <button id="SignIn" class="UserButtons">Sign In</button>
+        <button id="SignUp" class="UserButtons">Sign Up</button>
     </div>
-
 </nav>
 
 <main>
-    <section style="display: flex; justify-content: center; flex-direction: column; align-items: center ">
-        <h6>Abcfdefb</h6>
-        <h1>Discover the hell</h1>
-        <p>You have died :(</p>
-        <div style="display: flex; justify-content: center; flex-direction: row; align-items: center ">
-            <button onclick="alert('Hehe :)')">Why?</button>
-            <button onclick="alert('What is wrong with you?')">Hell yeah! >:)</button>
+    <section id="Header">
+        <div id="LeftDisplay">
+            <img class="HeaderPerson" src="People/person1.jpeg" alt="Person1">
+            <img class="HeaderPerson" src="People/person2.jpeg" alt="Person2">
+        </div>
+
+        <div id="CenterDisplay">
+            <span id="LearningPlatform">Learning Platform</span>
+            <h2 id="GrowTitle">Grow now with</h2>
+            <h2 id="Digital">digital skills</h2>
+            <span id="Description1">We happily cut through the noise and teach designers and devs personally, taking a 100% learn-by-doing approach with a zero PowerPoint policy</span>
+            <div class="ButtonHolder">
+                <button id="CoursesButton" class="ProductButtons">Explore Courses</button>
+                <button id="BootcampsButton" class="ProductButtons">Join Bootcamps</button>
+            </div>
+            <span id="Trust">Trusted by 500,000 Designers in 150 countries</span>
+            <div id="LogoLoopHolder">
+                <div id="LogoLoop">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                    <img class="LoopLogo" src="generic_company.jpg" alt="Company">
+                </div>
+            </div>
+        </div>
+
+        <div id="RightDisplay">
+            <img class="HeaderPerson" src="People/person3.jpeg" alt="Person3">
+            <img class="HeaderPerson" src="People/person4.jpeg" alt="Person4">
         </div>
     </section>
+    <section id="Courses">
+        <span id="MostPopular">Most Popular</span>
+        <h2>Our featured <span id="Orange">courses</span></h2>
+        <div id="CourseHolder">
 
-    <section style="display: flex; justify-content: center; flex-direction: column; align-items: center ">
-        <p>Over 100 of the top 100 ceos end up here</p>
-        <ul style="display: flex;">
-            <li>Mark Zuckerberg</li>
-            <li>Elon Musk</li>
-            <li>Bill Gates</li>
-            <li>Jeffrey Bezos</li>
-        </ul>
+            <article class="Course">
+                <div class="CourseImgHolder">
+                    <span class="LeftText">42K</span>
+                    <span class="RightText">S</span>
+                </div>
+                <h3 class="CourseName">Course Name</h3>
+                <div class="CourseDescription">
+                    <p>Intermidiate</p>
+                    <p class="Last">2hour 10min</p>
+                </div>
+                <div class="Footer">
+                    <div class="Stars">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <span class="Rating">(4.5)</span>
+                    </div>
+                    <button class="Enroll">Enroll now</button>
+                </div>
+            </article>
+            <article class="Course">
+                <div class="CourseImgHolder">
+                    <span class="LeftText">42K</span>
+                    <span class="RightText">S</span>
+                </div>
+                <h3 class="CourseName">Course Name</h3>
+                <div class="CourseDescription">
+                    <p>Intermidiate</p>
+                    <p class="Last">2hour 10min</p>
+                </div>
+                <div class="Footer">
+                    <div class="Stars">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <span class="Rating">(4.5)</span>
+                    </div>
+                    <button class="Enroll">Enroll now</button>
+                </div>
+            </article>
+            <article class="Course">
+                <div class="CourseImgHolder">
+                    <span class="LeftText">42K</span>
+                    <span class="RightText">S</span>
+                </div>
+                <h3 class="CourseName">Course Name</h3>
+                <div class="CourseDescription">
+                    <p>Intermidiate</p>
+                    <p class="Last">2hour 10min</p>
+                </div>
+                <div class="Footer">
+                    <div class="Stars">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <span class="Rating">(4.5)</span>
+                    </div>
+                    <button class="Enroll">Enroll now</button>
+                </div>
+            </article>
+            <article class="Course">
+                <div class="CourseImgHolder">
+                    <span class="LeftText">42K</span>
+                    <span class="RightText">S</span>
+                </div>
+                <h3 class="CourseName">Course Name</h3>
+                <div class="CourseDescription">
+                    <p>Intermidiate</p>
+                    <p class="Last">2hour 10min</p>
+                </div>
+                <div class="Footer">
+                    <div class="Stars">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <img class="Star" src="star-given.png" alt="star">
+                        <span class="Rating">(4.5)</span>
+                    </div>
+                    <button class="Enroll">Enroll now</button>
+                </div>
+            </article>
+        </div>
     </section>
-
-    <section style="display: flex; justify-content: center; flex-direction: column; align-items: center ">
-        <p>Introductions</p>
-        <h1>Our best ones</h1>
-        <section style="display: flex; justify-content: center; flex-direction: row; align-items: center; margin: 10px">
-            <article
-                    style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin: 10px ">
-                <img src="cat.jpg" width="100" height="80" alt="cat">
-                <h5>How to live</h5>
-                <span>3/5 stars</span>
-                <button onclick="alert('Thanks for buying')">Read more</button>
+    <section id="About">
+        <div>
+            <span id="Advantage">The Edukin Advantage</span>
+            <h2>About <span style="color: orangered">Edukin</span></h2>
+            <p>Edukin online video platform offers a huge advantage for anyone who uses it, it is a perfect place for fun</p>
+            <article>
+                <h3>Access to mentors</h3>
+                <p>Get personalized feedback</p>
             </article>
-            <article
-                    style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin: 10px ">
-                <img src="cat.jpg" width="100" height="80" alt="cat">
-                <h5>How to live</h5>
-                <span>4/5 stars</span>
-                <button onclick="alert('Thanks for buying')">Read more</button>
-            </article>
-            <article
-                    style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin: 10px ">
-                <img src="cat.jpg" width="100" height="80" alt="cat">
-                <h5>How to live</h5>
-                <span>1/5 stars</span>
-                <button onclick="alert('Thanks for buying')">Read more</button>
-            </article>
-            <article
-                    style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin: 10px ">
-                <img src="cat.jpg" width="100" height="80" alt="cat">
-                <h5>How to live</h5>
-                <span>5/5 stars</span>
-                <button onclick="alert('Thanks for buying')">Read more</button>
-            </article>
-        </section>
-    </section>
-
-    <section style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin: 10px">
-        <p>Why hell is good</p>
-        <h2>About us</h2>
-        <p>Hell was formed when god created us so thank him</p>
-        <ul>
-            <li>
-                <h3>Constant suffering</h3>
-                <p>This is the best part</p>
-            </li>
-        </ul>
+        </div>
+        <img src="generic_photo.png" alt="Photo">
     </section>
 </main>
-
-<footer style="display: flex; justify-content: space-between; justify-items: center">
-    <span>&copy; EduKin</span>
-    <ul style="display: flex;">
-        <li><a href="" target="_blank">Lorem Ipsum</a></li>
-        <li><a href="" target="_blank">Lorem Ipsum</a></li>
-        <li><a href="" target="_blank">Lorem Ipsum</a></li>
-        <li><a href="" target="_blank">Lorem Ipsum</a></li>
-        <li><a href="" target="_blank">Lorem Ipsum</a></li>
-    </ul>
-    <span>Images cca</span>
-
-</footer>
-
-
 </body>
 </html>

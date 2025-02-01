@@ -1,0 +1,372 @@
+@keyframes show {
+    0% {
+        rotation: 0deg;
+        width: 0;
+        height: 0;
+    }
+    25% {
+        rotate: 90deg;
+    }
+    50% {
+        rotate: 180deg;
+    }
+    75% {
+        rotate: 270deg;
+    }
+    100% {
+        rotate: 360deg;
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+#Header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4vh;
+    margin-bottom: -9rem;
+
+
+    #CenterDisplay {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+
+
+        #LearningPlatform {
+            background-color: #f0f0f0;
+            color: #adadad;
+            padding: 0.5rem 1rem;
+            border-radius: 20vh;
+        }
+
+        h2 {
+            font-weight: normal;
+            font-size: 6rem;
+            margin: 0;
+            padding: 0;
+            transition: all 1.5s ease;
+            position: relative;
+        }
+
+        #Digital {
+            margin-top: -2.25rem;
+        }
+
+        #Description1 {
+            margin: 2rem;
+            font-size: 1.05rem;
+            color: dimgrey;
+            width: 66ch;
+            text-align: center;
+        }
+
+        #Trust {
+            position: relative;
+            margin-top: 5rem;
+        }
+
+        #LogoLoopHolder {
+
+
+            width: 70vw;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+
+            #LogoLoop {
+                display: block;
+                position: relative;
+                left: 0rem;
+                width: 300rem;
+                translate: -150rem 0;
+
+                .LoopLogo {
+                    width: 15rem;
+                    height: 12rem;
+                    filter: grayscale(100%);
+                }
+
+                animation: movement 27s 0s infinite linear;
+            }
+        }
+    }
+
+    #GrowTitle {
+        top: -1rem;
+    }
+
+    #CenterDisplay:hover > #GrowTitle {
+        top: 0.5rem;
+    }
+
+    #Digital {
+        top: 1rem;
+    }
+
+    #CenterDisplay:hover > #Digital {
+        top: -0.5rem;
+    }
+
+
+    #Digital {
+        color: orangered;
+    }
+
+    #LeftDisplay, #RightDisplay {
+        height: 100%;
+        width: 20%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .FeaturedText {
+        position: relative;
+        opacity: 0;
+
+    }
+
+
+    img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+    }
+
+    .ProductButtons {
+        background: none;
+        font-size: 1rem;
+        width: 12rem;
+        height: 3.5rem;
+        border-radius: 20vh;
+        position: relative;
+        border: #adadad 1px solid;
+        top: 0;
+        transition: 500ms all ease-in-out;
+
+    }
+
+    .ButtonHolder {
+        display: flex;
+        gap: 1rem;
+    }
+
+    #BootcampsButton:hover {
+        box-shadow: 0 3px 10px black;
+    }
+
+    #CoursesButton {
+        color: white;
+        background-color: black;
+    }
+
+    #CoursesButton:hover {
+        color: black;
+        background-color: white;
+        box-shadow: 0 3px 10px black;
+    }
+}
+
+#Courses {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+    background-color: #f0f0f0;
+    padding: 8rem 0rem;
+
+    #MostPopular {
+        background-color: white;
+        color: #909090;
+        border-radius: 10rem;
+        padding: 0.25rem 0.75rem;
+    }
+
+    h2 {
+        font-size: 4.5rem;
+        font-weight: normal;
+
+        #Orange {
+            color: orangered;
+
+        }
+    }
+
+    #CourseHolder {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 5rem;
+    }
+
+    .Course {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+        transition: 500ms all ease-in-out;
+
+        background-color: #ffffff;
+        padding: 0.75rem 0.75rem;
+
+        .CourseImgHolder {
+            position: relative;
+
+            width: 18rem;
+            height: 15rem;
+            background-image: url("generic_photo.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 1rem;
+
+            .LeftText, .RightText {
+                position: absolute;
+                top: 1rem;
+                padding: 0.25rem 0.85rem;
+                opacity: 95%;
+                background-color: #dddddd;
+                color: #555555;
+                border-radius: 4rem;
+            }
+
+            .LeftText {
+                left: 1.5rem;
+            }
+
+            .RightText {
+                right: 1.5rem;
+            }
+        }
+
+        .CourseName {
+            align-self: flex-start;
+            margin-bottom: 0rem;
+        }
+
+        .CourseDescription {
+            display: flex;
+            align-self: flex-start;
+            flex-flow: row nowrap;
+            gap: 0rem;
+            position: relative;
+            height: 3rem;
+
+            .Last::before {
+                content: '-';
+                margin-left: .5rem;
+                margin-right: .5rem;
+                position: relative;
+
+            }
+        }
+
+        .Footer {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 0rem;
+            justify-content: space-between;
+            width: 100%;
+
+            .Stars {
+                align-self: center;
+
+                .Star {
+                    width: 1rem;
+                    height: 1rem;
+                }
+
+                .Rating {
+                    color: #707070;
+                }
+            }
+
+            .Enroll {
+                padding: .5rem 1rem;
+                border-radius: 100vh;
+                border: lightgray solid 2px;
+                background-color: #ffffff;
+                transition: 500ms all ease-in-out;
+            }
+
+            .Enroll:hover {
+                background-color: #000000;
+                border-color: #000000;
+                color: white;
+            }
+        }
+    }
+
+    .Course:hover {
+        box-shadow: 0px 5px 10px black;
+    }
+}
+
+
+#About {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding: 6rem;
+
+    div {
+        #Advantage {
+            padding: 0.75rem 1.5rem;
+            border-radius: 2rem;
+            background-color: #f0f0f0;
+            color: #8d8d8d;
+        }
+
+        h2 {
+            margin-bottom: 0;
+            font-size: 4rem;
+            font-weight: normal;
+        }
+
+        > p {
+            font-size: 1rem;
+            width: 70%;
+        }
+    }
+
+
+    article {
+        > h3 {
+            font-size: 2rem;
+        }
+
+        > h3::before {
+            content: "|";
+            color: orangered;
+            margin-right: 0.5rem;
+            margin-top: 0rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+            width: 70%;
+        }
+    }
+
+    img {
+        width: 40rem;
+        height: 40rem;
+        border-radius: 0% 10% 10% 0%;
+    }
+}
+
+@keyframes movement {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 150rem;
+    }
+}
