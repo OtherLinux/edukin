@@ -2,7 +2,11 @@
 <hr>
 <h2>Setup</h2>
 
-<p>There is no setup it is just an html file</p>
+<p>There is no setup it is just a html file and a CSS file</p>
+<hr>
+<h2>Live demo</h2>
 
+[Click here for demo](https://otherlinux.github.io/edukin/)
+<hr>
 
 
